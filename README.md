@@ -1,5 +1,8 @@
 # Code Louisville Python 2021 project by Virginia Swift 
 
+This is a basic Django project integrated with Bootstrap, showcasing my concert photography (as I like to say, 
+I'm not a pro, just a fan with a smartphone)
+
 ## INSTRUCTIONS
 
 Create a project directory and install a python virtual environment inside it
@@ -42,6 +45,9 @@ Read and parse external file venues.json and display data
 Calculate and display data based on an external factor 
 (ex: get the current date, and display how many days remaining until some event)
 (Countdown to LTL 2021) 
+
+Connect to an external/3rd party API and read data into your app
+(Clicking on Flickr Gallery button takes you to a separate page of just a few of my photo galleries) 
 ```
 
 ## CREDITS
