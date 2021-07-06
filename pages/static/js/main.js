@@ -27,7 +27,7 @@ fetch("../static/js/venues.json").then(
 // countdown clock JS //
 
 function getTimeRemaining(endtime) {
-    const total = Date.parse('September 24, 2021') - Date.parse(new Date());
+    const total = Date.parse('September 23, 2021') - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);
     const minutes = Math.floor((total / 1000 / 60) % 60);
     const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
@@ -71,17 +71,19 @@ function getTimeRemaining(endtime) {
 
 // HTML form JS //
 
-var form = document.getElementById('sheetdb-form');
-form.addEventListener("submit", e => {
-  e.preventDefault();
-  fetch(form.action, {
-      method: "POST",
-      body: new FormData(document.getElementById("sheetdb-form")),
-  }).then(
-      response => response.json()
-  ).then((html) => {
-      alert('HEY IT WORKED! Click OK to see the results on this nifty Google Sheet!')
-      window.location.assign("https://docs.google.com/spreadsheets/d/14bzfUQ8J7P4q3028VyCbxwf88zKniMpvMkrPrhXXHE0/")
-  });
-});
+// disabled for now, debating on whether to add this back into project //
+
+// var form = document.getElementById('sheetdb-form');
+// form.addEventListener("submit", e => {
+//   e.preventDefault();
+//   fetch(form.action, {
+//       method: "POST",
+//       body: new FormData(document.getElementById("sheetdb-form")),
+//   }).then(
+//       response => response.json()
+//   ).then((html) => {
+//       alert('HEY IT WORKED! Click OK to see the results on this nifty Google Sheet!')
+//       window.location.assign("https://docs.google.com/spreadsheets/d/14bzfUQ8J7P4q3028VyCbxwf88zKniMpvMkrPrhXXHE0/")
+//   });
+// });
 
